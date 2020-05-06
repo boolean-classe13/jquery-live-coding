@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    border: 2px solid red;
+    padding: 20px;
+    width: 1200px;
+    margin: auto;
+}
+
+section::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.left, .right {
+    float: left;
+}
+
+.left {
+    width: 75%;
+    border: 2px solid blue;
+    padding: 20px;
+}
+
+.right {
+    width: 25%;
+    border: 2px solid green;
+    padding: 20px;
+}
