@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#griglia {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.quadrato {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    float: left;
+}
+
+.rosso {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
