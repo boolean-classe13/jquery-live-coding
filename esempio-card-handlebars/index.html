@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Card create con handlebars</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <main class="d-flex justify-content-between"></main>
+                </div>
+            </div>
+        </div>
+
+
+        <script id="card-studente" type="text/x-handlebars-template">
+            <!-- template di una card per uno studente -->
+            <div class="card" style="width: 18rem;">
+                <img src="{{ image }}" class="card-img-top" alt="{{ name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ name }}</h5>
+                    <p class="card-text">{{ subjects }}</p>
+                </div>
+            </div>
+        </script>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
