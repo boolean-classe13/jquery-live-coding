@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Chuck Norris Jokes</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <select id="scelta-categoria">
+                <option value=""> - seleziona categoria - </option>
+            </select>
+            <button id="nuova-battuta">Nuova battuta</button>
+
+            <input type="text" id="testo-ricerca" placeholder="Digita qualcosa...">
+            <button id="cerca">Cerca</button>
+        </header>
+
+        <div id="battute-container"></div>
+
+        <script id="battuta-template" type="text/x-handlebars-template">
+            <p>{{ testo }}</p>
+        </script>
+        <script id="option-template" type="text/x-handlebars-template">
+            <option value="{{ valore }}">{{ valore }}</option>
+        </script>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
